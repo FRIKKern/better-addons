@@ -1,3 +1,7 @@
+---
+description: "Set the active development mode (Blizzard Faithful, Boundary Pusher, Enhancement Artist, Performance Zealot)"
+---
+
 Set WoW addon development mode: $ARGUMENTS
 
 > **Plugin context:** This command is part of the better-addons plugin. Mode definitions (blizzard-faithful.md, etc.) are in the plugin's own `modes/` directory. The active mode state (`active-mode.md`) is stored in the project's `.claude/modes/` directory.

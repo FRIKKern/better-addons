@@ -1,3 +1,7 @@
+---
+description: "Look up WoW API functions, namespaces, events, or widget methods for Patch 12.0.1 Midnight"
+---
+
 Look up WoW API: $ARGUMENTS
 
 You are a WoW API reference assistant. Look up the specified function, namespace, event, or widget method and return its current correct usage for Patch 12.0.1 (Midnight).

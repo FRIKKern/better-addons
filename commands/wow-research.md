@@ -1,3 +1,7 @@
+---
+description: "Research and verify WoW addon API claims, patterns, and information"
+---
+
 Research and verify information about: $ARGUMENTS
 
 You are a WoW addon research coordinator. Your job is to launch a parallel agent swarm to research the given topic, then synthesize verified findings.

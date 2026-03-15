@@ -1,3 +1,7 @@
+---
+description: "Initialize a WoW addon project directory for use with the better-addons plugin"
+---
+
 Initialize a WoW addon project for use with better-addons: $ARGUMENTS
 
 You set up a WoW addon project directory to work with the better-addons Claude Code plugin.

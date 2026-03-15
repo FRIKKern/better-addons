@@ -1,6 +1,10 @@
+---
+description: "Create a complete, ready-to-install WoW addon for Midnight 12.0+ from a description"
+---
+
 Create a WoW addon: $ARGUMENTS
 
-**Development Mode:** Before creating the addon, read `.claude/modes/active-mode.md` to determine the active mode (default: `enhancement-artist`), then read `.claude/modes/{mode-name}.md` for mode-specific rules. Pass the mode context to the Coder agent. The mode affects which patterns, APIs, and techniques are used in the generated code.
+**Development Mode:** Before creating the addon, read the project's `.claude/modes/active-mode.md` to determine the active mode (default: `enhancement-artist`), then read the mode definition from this plugin's `modes/{mode-name}.md` for mode-specific rules. If the project's `.claude/modes/` directory doesn't exist, use the default mode. Pass the mode context to the Coder agent. The mode affects which patterns, APIs, and techniques are used in the generated code.
 
 If the user includes a mode keyword in $ARGUMENTS (e.g., "create a **faithful** damage meter" or "create a **boundary** nameplate addon"), use that mode instead of the active mode. Keywords: faithful/blizzard/safe, boundary/aggressive/advanced, enhance/better/skin, performance/perf/fast.
 

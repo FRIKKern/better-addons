@@ -1,6 +1,10 @@
+---
+description: "Review WoW addon code for deprecated APIs, taint risks, Secret Values violations, and pattern issues"
+---
+
 Review WoW addon code: $ARGUMENTS
 
-**Development Mode:** Before reviewing, read `.claude/modes/active-mode.md` to determine the active mode (default: `enhancement-artist`), then read `.claude/modes/{mode-name}.md` for mode-specific review criteria. The mode affects which patterns are considered correct vs. violations.
+**Development Mode:** Before reviewing, read the project's `.claude/modes/active-mode.md` to determine the active mode (default: `enhancement-artist`), then read the mode definition from this plugin's `modes/{mode-name}.md` for mode-specific review criteria. If the project's `.claude/modes/` directory doesn't exist, use the default mode. The mode affects which patterns are considered correct vs. violations.
 
 If the user includes a mode keyword in $ARGUMENTS (e.g., "review as **boundary-pusher**"), use that mode instead of the active mode.
 
