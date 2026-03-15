@@ -1,0 +1,12 @@
+{
+  "name": "better-addons",
+  "description": "AI-powered WoW addon development toolkit for Midnight (12.0+). Create, review, debug, and migrate WoW addons with mode-selectable AI agents — from Blizzard Faithful to Boundary Pusher.",
+  "version": "1.0.0",
+  "author": {
+    "name": "FRIKKern"
+  },
+  "homepage": "https://better-addons.com",
+  "repository": "https://github.com/FRIKKern/better-addons",
+  "license": "MIT",
+  "keywords": ["wow", "warcraft", "addon", "midnight", "12.0", "lua", "game-dev", "ai", "claude-code"]
+}

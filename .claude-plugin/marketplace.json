@@ -1,0 +1,16 @@
+{
+  "name": "better-addons",
+  "owner": {
+    "name": "FRIKKern"
+  },
+  "metadata": {
+    "description": "WoW addon AI development tools for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "better-addons",
+      "source": ".",
+      "description": "AI-powered WoW addon development toolkit for Midnight (12.0+)"
+    }
+  ]
+}
