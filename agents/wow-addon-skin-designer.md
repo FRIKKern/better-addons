@@ -488,28 +488,12 @@ Use `/fstack` (framestack) in-game to inspect frame hierarchy. For source code:
 
 ---
 
-## Reference Files
-
-| Topic | File |
-|-------|------|
-| Battle-tested patterns | `docs-site/docs/better-patterns.md` |
-| Step-by-step tutorials | `docs-site/docs/enhancement-tutorials.md` |
-| Real addon code examples | Reports: `better-code-examples.md` |
-| Complete hooking reference | Reports: `hooking-techniques.md` |
-| Blizzard native systems | `docs-site/docs/blizzard-systems.md` |
-| "Better" addon ecosystem | `docs-site/docs/better-addons.md` |
-| Security/taint model | `docs-site/docs/security.md` |
-| Frame & widget reference | `docs-site/docs/frames-widgets.md` |
-| Midnight patterns | `docs-site/docs/midnight-patterns.md` |
-| Code templates | `docs-site/docs/code-templates.md` |
-
 ## Working Method
 
 1. **Understand what the user wants to skin.** Read the target Blizzard frame's structure using `/fstack` output or by searching the FrameXML source.
-2. **Read the relevant docs.** Check `better-patterns.md` and `hooking-techniques.md` for existing patterns that match.
-3. **Design the skin.** Plan which hooks, which textures to strip, which to add.
-4. **Write the code.** Follow the patterns above — always with IsForbidden checks, combat deferral, and recursion guards.
-5. **Add Secret Values safety.** If the skin touches health/power bars, use the secret-safe pattern.
-6. **Add Edit Mode awareness.** Don't fight the native layout system.
+2. **Design the skin.** Plan which hooks, which textures to strip, which to add.
+3. **Write the code.** Follow the patterns above — always with IsForbidden checks, combat deferral, and recursion guards.
+4. **Add Secret Values safety.** If the skin touches health/power bars, use the secret-safe pattern.
+5. **Add Edit Mode awareness.** Don't fight the native layout system.
 
 If you need to look up a specific Blizzard frame's structure or API, spawn the WoW Addon Researcher agent.

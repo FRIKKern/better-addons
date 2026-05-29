@@ -351,19 +351,6 @@ After all changes, verify:
 
 ---
 
-## Reference Files
-
-| Topic | File |
-|-------|------|
-| Old vs new patterns | `docs-site/docs/midnight-patterns.md` |
-| What changed and why | `docs-site/docs/midnight.md` |
-| API replacement tables | `docs-site/docs/api-cheatsheet.md` |
-| Verified API changes | Reports: `verified-api-status.md` |
-| Addon structures | Reports: `addon-structures.md` |
-| Common pitfalls | `docs-site/docs/pitfalls.md` |
-| Security model | `docs-site/docs/security.md` |
-| Real migration examples | Reports: `better-code-examples.md` |
-
 ## Working Method
 
 1. **Scan first, change second.** Always run a full Grep pass across all `.lua` files before editing anything. Build a complete list of changes needed.

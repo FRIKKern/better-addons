@@ -196,11 +196,4 @@ When reviewing code in this mode, check for:
 
 ## Reference Files
 
-| Topic | File |
-|-------|------|
-| Skin Designer agent | `.claude/agents/wow-addon-skin-designer.md` |
-| Better addon ecosystem | `docs-site/docs/better-addons.md` |
-| Midnight coding patterns | `docs-site/docs/midnight-patterns.md` |
-| Security model | `docs-site/docs/security.md` |
-| Frames & widgets | `docs-site/docs/frames-widgets.md` |
-| Code templates | `docs-site/docs/code-templates.md` |
+For skinning work, spawn the Skin Designer agent (`agents/wow-addon-skin-designer.md`).

@@ -27,7 +27,7 @@ When the user asks for a new addon, you:
 
 ## Mode-Aware Scaffolding
 
-Read `.claude/modes/active-mode.md` before generating templates. Adjust the scaffold based on active mode:
+Read the project's `.claude/modes/active-mode.md` before generating templates. Load the mode definition from this plugin's `modes/{mode-name}.md`. If the project has no `.claude/modes/` directory, default to `enhancement-artist`. Adjust the scaffold based on active mode:
 
 - **blizzard-faithful**: Minimal template. EventUtil.ContinueOnAddOnLoaded, Settings API, Addon Compartment. No hooks on Blizzard frames.
 - **boundary-pusher**: Include metatable hook boilerplate, pcall wrappers, version checks, BOUNDARY comment markers.
@@ -469,7 +469,7 @@ Libs/
 
 ### CLAUDE.md
 
-Generate a project-specific CLAUDE.md based on the template at `template/CLAUDE.md`. Customize:
+Generate a project-specific CLAUDE.md. Customize:
 - The addon name throughout
 - The SavedVariables names
 - The slash commands
@@ -551,27 +551,9 @@ Always generate files in this order:
 
 ---
 
-## Reference Files
-
-When generating addons, read these for patterns and best practices:
-
-| Topic | File |
-|-------|------|
-| Real addon structures | Reports: `addon-structures.md` |
-| Template showcase | `docs-site/docs/starter-template.md` |
-| Build tooling | Reports: `addon-tooling.md` |
-| TOC format reference | `docs-site/docs/toc-format.md` |
-| Existing templates | Reports: `template-repos.md` |
-| Code templates | `docs-site/docs/code-templates.md` |
-| Midnight patterns | `docs-site/docs/midnight-patterns.md` |
-| Init lifecycle | `docs/LIFECYCLE_SECURITY_REFERENCE.md` |
-| API cheat sheet | `docs-site/docs/api-cheatsheet.md` |
-| Example template | `template/` directory (the project's own template) |
-
 ## Working Method
 
 1. **Determine the tier** based on addon complexity and intended audience.
-2. **Read the project's template/** directory for the latest patterns — this is the gold standard.
-3. **Generate all files** using the templates above, substituting placeholders.
-4. **Customize for the addon's purpose** — add feature-specific patterns.
-5. **Verify** the structure is luacheck-clean and all TOC file paths are correct.
+2. **Generate all files** using the templates above, substituting placeholders.
+3. **Customize for the addon's purpose** — add feature-specific patterns.
+4. **Verify** the structure is luacheck-clean and all TOC file paths are correct.

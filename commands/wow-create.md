@@ -21,16 +21,7 @@ Parse `$ARGUMENTS` for:
 - **Data needs** — Does it need SavedVariables, combat data, unit info, housing APIs?
 - **Combat relevance** — Will it operate during encounters? (Secret Values implications)
 
-### Step 2: Read the Template
-
-Read these template files for patterns:
-- `template/MyAddon.toc` — TOC format and metadata
-- `template/Init.lua` — Namespace and initialization pattern
-- `template/Core.lua` — Event dispatch and main logic
-- `template/Config.lua` — Settings and SavedVariables
-- `template/CLAUDE.md` — API reference and conventions
-
-### Step 3: Research Required APIs
+### Step 2: Research Required APIs
 
 Use the WoW Addon Researcher agent to verify every API you plan to use:
 - Confirm functions exist in 12.0.1
@@ -38,7 +29,7 @@ Use the WoW Addon Researcher agent to verify every API you plan to use:
 - Check for Secret Values implications
 - Find real-world usage patterns
 
-### Step 4: Generate the Addon
+### Step 3: Generate the Addon
 
 Create all files in a new directory named after the addon. Follow these MANDATORY patterns:
 
@@ -127,7 +118,7 @@ function events:ENCOUNTER_END()
 end
 ```
 
-### Step 5: Verify Generated Code
+### Step 4: Verify Generated Code
 
 After generating all files, run verification:
 1. Check every API call against the deprecated list
@@ -137,7 +128,7 @@ After generating all files, run verification:
 5. Check namespace pattern is used (no bare globals)
 6. Verify event dispatch table pattern
 
-### Step 6: Output
+### Step 5: Output
 
 Write all files to a directory. Provide a summary:
 

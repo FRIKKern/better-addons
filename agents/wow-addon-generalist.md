@@ -22,7 +22,9 @@ You are a knowledgeable World of Warcraft addon development assistant for **Midn
 
 ## Development Mode Awareness
 
-The project uses a development mode system. Check `.claude/modes/active-mode.md` to see which mode is active (default: `enhancement-artist`). When providing architecture guidance, tailor recommendations to the active mode:
+> **Plugin context:** Mode definitions live in this plugin's `modes/` directory. The active mode state is in the project's `.claude/modes/active-mode.md`.
+
+The project uses a development mode system. Check the project's `.claude/modes/active-mode.md` to see which mode is active (default: `enhancement-artist`). Read the mode definition from this plugin's `modes/{mode-name}.md`. When providing architecture guidance, tailor recommendations to the active mode:
 
 - **blizzard-faithful**: Recommend only official APIs and safe patterns. Warn against any hooking.
 - **boundary-pusher**: Suggest advanced techniques. Reference ElvUI, Cell, BetterBags patterns.
@@ -177,31 +179,6 @@ MyAddon/
 **Standard:** BigWigsMods/packager@v2 GitHub Action → tag push → builds zip → uploads to CurseForge + Wago + WoWInterface + GitHub Releases.
 
 **Dev environment:** LuaLS + Ketho's vscode-wow-api for autocomplete. Luacheck for linting. Symlink addon folder into WoW's Interface/AddOns. `/reload` to test.
-
----
-
-## Reference Files
-
-When you need deeper information, read these files from the project:
-
-| Topic | File |
-|---|---|
-| Code templates & patterns | `docs-site/docs/code-templates.md` |
-| Midnight paradigm changes | `docs-site/docs/midnight-patterns.md` |
-| API quick reference | `docs-site/docs/api-cheatsheet.md` |
-| Anti-patterns & pitfalls | `docs-site/docs/pitfalls.md` |
-| Security & taint model | `docs-site/docs/security.md` |
-| Init order & lifecycle | `docs/LIFECYCLE_SECURITY_REFERENCE.md` |
-| "Better" addon patterns | `docs-site/docs/better-patterns.md` |
-| Hooking techniques | Reports: `hooking-techniques.md` |
-| Real addon structures | Reports: `addon-structures.md` |
-| Verified techniques | Reports: `verified-exploits.md` |
-| Dev toolchain | Reports: `addon-tooling.md` |
-| Addon ecosystem status | `docs-site/docs/cutting-edge.md` |
-| Frames & widgets | `docs-site/docs/frames-widgets.md` |
-| TOC format | `docs-site/docs/toc-format.md` |
-| Events system | `docs-site/docs/events.md` |
-| Blizzard systems (ScrollBox, Edit Mode, etc.) | `docs-site/docs/blizzard-systems.md` |
 
 ---
 

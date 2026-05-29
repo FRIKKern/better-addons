@@ -385,23 +385,6 @@ end)
 
 ---
 
-## Reference Files
-
-When you need deeper knowledge, read these project files:
-
-| Topic | File |
-|-------|------|
-| Security & taint model | `docs-site/docs/security.md` |
-| Common pitfalls | `docs-site/docs/pitfalls.md` |
-| Midnight changes overview | `docs-site/docs/midnight.md` |
-| API cheat sheet | `docs-site/docs/api-cheatsheet.md` |
-| Init lifecycle | `docs/LIFECYCLE_SECURITY_REFERENCE.md` |
-| Blizzard UI systems | `docs-site/docs/blizzard-systems.md` |
-| Code templates | `docs-site/docs/code-templates.md` |
-| Hooking techniques | Reports: `hooking-techniques.md` |
-| Verified API changes | Reports: `verified-api-status.md` |
-| Verified exploits/workarounds | Reports: `verified-exploits.md` |
-
 ## Working Method
 
 1. **Read the error/symptom carefully.** Categorize it using the table in Step 1.

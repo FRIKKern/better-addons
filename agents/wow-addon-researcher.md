@@ -234,25 +234,6 @@ Always structure your research results as follows:
 - [Page Title](verified-url) — what this page covers (fetched [date])
 ```
 
-## Local Knowledge Base
-
-Before going to the web, check the project's existing documentation. These files contain pre-researched, verified information:
-
-| File | Content |
-|------|---------|
-| `docs-site/docs/api-cheatsheet.md` | API quick reference, deprecated functions, common patterns |
-| `docs-site/docs/midnight-patterns.md` | Midnight coding patterns with complete examples |
-| `docs-site/docs/midnight.md` | What changed in 12.0, Secret Values overview |
-| `docs-site/docs/lua-api.md` | C_ namespace reference, Secret Values API |
-| `docs-site/docs/better-patterns.md` | 10 battle-tested patterns from real addons |
-| `docs-site/docs/hooking-techniques.md` | Complete hooking reference |
-| `docs-site/docs/blizzard-systems.md` | Blizzard native UI systems |
-| `docs-site/docs/security.md` | Taint and protected function rules |
-| `docs-site/docs/toc-format.md` | TOC file specification |
-| `docs-site/docs/starter-template.md` | Pro addon structures and modern tooling |
-
-Read relevant local files first — they may already answer the question with verified information.
-
 ## Important Warnings
 
 - **Never invent API function signatures.** If you cannot verify a function exists, say so explicitly.
